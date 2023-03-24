@@ -1,0 +1,406 @@
+/* SMOOTHER SCROLL */
+html{
+  scroll-behavior: smooth;
+}
+/* COLOR */
+.bgp,
+.bgh,
+.tc{
+  display: inline-block;
+  width: 3rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.bgp {
+  background-color: #0a6d36;
+}
+
+.bgh{
+  background-color: #666;
+}
+
+.tc{
+  background-color: #000000;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #191c19;
+  background-color: #ffffff;
+  min-width: 375px;
+}
+
+/* HEADINGS */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+/* PARAGRAPH */
+
+a {
+  line-height: 1.44rem;
+  word-wrap: break-word;
+}
+
+/* List */
+ol {
+  line-height: 1.5rem;
+}
+
+li::marker {
+  color: #0a6d36;
+  font-style: italic;
+}
+
+li{
+  margin-bottom: 0.5rem;
+}
+
+/* Header */
+header {
+  padding: 0rem;
+}
+
+header h1 {
+  margin: auto 0;
+  padding: 0;
+}
+
+/* Main */
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Code */
+code {
+  font-family: transat-text, sans-serif;
+  background-color: #ffffff;
+  color: #414941;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* Element Block */
+.element {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  border-top-width: 0.1rem;
+  border-top-style: solid;
+  border-top-color: #717970;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  border-top-width: 0.1rem;
+  border-top-color: #717970;
+  margin: 0 auto;
+  width: 90%;
+  height: 10vh;
+}
+
+footer p {
+  max-width: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+/*
+End of Root -------------------
+*/
+
+footer {
+  padding: 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+}
+
+/*
+Links -------------------
+*/
+/* IN-TEXT LINK */
+.link-intext {
+  text-decoration: none;
+  color: #0a6d36;
+}
+
+.link-intext:active,
+.link-intext:focus,
+.link-intext:hover {
+  text-decoration: underline;
+}
+
+.link-intext:after {
+  text-decoration: underline;
+  color: #414941;
+}
+
+/* NAVIGATION LINK */
+.link-nav {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.17rem;
+  color: #191c19;
+  padding: 0.75rem 1rem;
+  border-radius: 0rem;
+  transition: 0.2s;
+}
+
+.link-nav:active,
+.link-nav:hover,
+.link-nav:focus {
+  border-bottom-style: solid;
+  border-bottom-color: #0a6d36;
+  border-bottom-width: 0.2rem;
+}
+
+.active-nav {
+  border-bottom-style: solid;
+  border-bottom-color: #0a6d36;
+  border-bottom-width: 0.2rem;
+}
+/*
+End of Links -------------------
+*/
+
+
+
+/*
+COMBINED ELEMENTS -------------------
+*/
+/* MAIN NAVIGATION */
+.nav-bar {
+  z-index: 1;
+  position: sticky;
+  top: 0rem;
+  background-color: white;
+}
+
+.main-nav {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 0.75rem;
+}
+
+
+/* Style Guide Page */
+#interactive_elements,
+#text_elements,
+#combined_elements,
+#branding {
+  margin-top: 5rem;
+}
+
+main#style-guide {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Product Page */
+main#products #citations {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+/* START OF CITATION PAGE */
+main#citation{
+  width: 80%;
+}
+/* END OF CITATION PAGE */
+
+
+/* Style the select elements */
+select {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Start of Products Page */
+.main-title {
+  text-align: center;
+}
+.main-title h1 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.products .product {
+  position: relative;
+  background-color: var(--color-grey-5);
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  padding: 4rem;
+  padding-top: 0rem;
+  transition: all 0.4s ease-in-out;
+}
+.products .product:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+}
+.products .product:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+.products .product img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  filter: grayscale(100%);
+  transition: all 0.4s ease-in-out;
+}
+.products .product .product-text {
+  margin-top: -7px;
+  padding: 1.1rem;
+  border-top: 8px solid var(--color-secondary);
+}
+.products .product .product-text h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.products .product .product-text h4:hover {
+  color: var(--color-secondary);
+}
+.products .product .product-text p {
+  color: var(--color-grey-2);
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+/* End of Product Page */
+
+/* Start of Process Analysis page */
+.process {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+.process .product1 {
+  position: relative;
+  background-color: var(--color-grey-5);
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  padding: 4rem;
+  padding-top: 0rem;
+  transition: all 0.4s ease-in-out;
+}
+/* Start of Process Analysis page */
+
+
+
+/* Start of Home Page */
+.home-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);/*Split the screen into 2 column*/
+  min-height: 100vh;
+}
+.home-content .left-home {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.home-content .left-home .image {
+  border-radius: var(--br-sm-2);
+  size:90%;
+  margin-left: 4rem;
+  background-color: var(--color-black);
+  transition: all 0.4s ease-in-out;
+}
+.home-content .left-home .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(100%);
+}
+.home-content .left-home .image img:hover {
+  filter: grayscale(0);
+}
+.home-content .right-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+}
+.home-content .right-home .name {
+  font-size: 3rem;
+}
+
+.home-content .right-home p {
+  margin: 1.5rem 0;
+  line-height: 2rem;
+}
+
+.middle-text {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* End of Home page */

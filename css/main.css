@@ -526,6 +526,98 @@ select {
   }
 }
 
+.process-container {
+  padding: 64px;
+}
+
+/* Clear floats */
+.process-row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+/* 2/3 column */
+.process-column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+/* 1/3 column */
+.process-column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.process-container img{
+  display: block;
+  height: auto;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.process-column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  border-radius: 2rem;
+}
+
+.process-containerTab {
+  padding: 20px;
+  color: white;
+  border-radius: 2rem;
+}
+
+
+/* Closable button inside the container tab */
+.process-closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+/* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+@media screen and (max-width: 1000px) {
+  .process-column-66,
+  .process-column-33 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(20%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@keyframes pop-up {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* End of Process Analysis page */
 
 /* Start of Home Page */

@@ -1,253 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Evergreen - Style Guide</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evergreen - Style Guide</title>
 
-    <!-- Normalize.css file downloaded from https://necolas.github.io/normalize.css/ -->
-    <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
-    <link href="css/flexbox.css" rel="stylesheet" />
-    <!-- Font css file generated using Adobe Font -->
-    <link rel="stylesheet" href="https://use.typekit.net/vkt6nof.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-   <section class="nav-bar">
-      <nav class="main-nav flex-nav">
-        <a class="link-nav flex-nav-item active-nav" href="index.html"
-          >Style Guide</a
-        >
-        <a class="link-nav flex-nav-item" href="home.html">Home</a>
-        <a class="link-nav flex-nav-item" href="products.html">Products</a>
-        <a class="link-nav flex-nav-item" href="about.html">About</a>
-      </nav>
+  <!-- Normalize.css file downloaded from https://necolas.github.io/normalize.css/ -->
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/flexbox.css" rel="stylesheet" />
+  <!-- Font css file generated using Adobe Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/vkt6nof.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-      <nav class="sub-nav flex-nav">
-        <a class="flex-nav-item" href="#interactive_elements">Interactive Elements</a>
-        <a class="flex-nav-item" href="#text_elements">Text Elements</a>
-        <a class="flex-nav-item" href="#combined_elements">Combined Elements</a>
-        <a class="flex-nav-item" href="#brand-components">Brand Components</a>
-      </nav>
+<body>
+
+  <section class="nav-bar">
+    <nav class="main-nav flex-nav">
+      <a class="link-nav flex-nav-item active-nav" href="index.html">Style Guide</a>
+      <a class="link-nav flex-nav-item" href="home.html">Home</a>
+      <a class="link-nav flex-nav-item" href="products.html">Products</a>
+      <a class="link-nav flex-nav-item" href="about.html">About</a>
+    </nav>
+
+    <nav class="sub-nav flex-nav">
+      <a class="flex-nav-item" href="#interactive_elements">Interactive Elements</a>
+      <a class="flex-nav-item" href="#text_elements">Text Elements</a>
+      <a class="flex-nav-item" href="#combined_elements">Combined Elements</a>
+      <a class="flex-nav-item" href="#brand-components">Brand Components</a>
+    </nav>
+  </section>
+
+  <main id="style-guide">
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!-- IN-TEXT LINK -->
+      <section id="intext_link" class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.link-intext</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="link-intext"&gt;In-text link&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="link-intext" href="#intext_link">In-text link</a>
+      </section>
+
+      <!-- NAVIGATION LINK -->
+      <section id="link_nav" class="element">
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.link-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="link-nav"&gt;Navigation Link&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="link-nav" href="#link_nav">Navigation Link</a>
+      </section>
+
+      <!-- IMAGE AS LINK -->
+      <section id="image_as_link" class="element">
+        <h3>Image as Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.products .product img</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div class=""&gt;</code>
+        <code>&lt;a href="#"&gt;</code>
+        <code>&lt;img src="img/" alt="project"&gt;</code>
+        <code>&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <div class="product">
+          <a href="project1.html"><img src="img/Frame 1.png" alt="project 1"></a>
+        </div>
+      </section>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+      <p>Could add "div class" to change style of header</p>
+      <!-- FOUR LEVELS OF HEADINGS -->
+      <section id="headings" class="element">
+        <h3>Headings</h3>
+
+        <h4>CSS selector:</h4>
+        <p>
+          h1 <br />
+          h2 <br />
+          h3 <br />
+          h4
+        </p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h1&gt;H1 Heading&lt;/h1&gt;</code>
+        <code>&lt;h2&gt;H2 Heading&lt;/h2&gt;</code>
+        <code>&lt;h3&gt;H3 Heading&lt;/h3&gt;</code>
+        <code>&lt;h4&gt;H4 Heading&lt;/h4&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <h1 style="font-weight: 700;">H1 Heading</h1>
+        <h2>H2 Heading</h2>
+        <h3>H3 Heading</h3>
+        <h4>H4 Heading</h4>
+      </section>
+
+      <!-- PARAGRAPH -->
+      <section id="paragraph" class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Content&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>
+          EVER GREEN brings an exclusive, unique, high-quality selection of limited edition plants straight from
+          our greenhouse to your home. Each variety is sourced, nurtured, and grown in small batches by our
+          passionate Research & Development growers. Searching the globe for responsibly grown varieties that
+          entice and excite plant lovers, we are constantly on the lookout for new and exciting plants to add to
+          the assortment.
+        </p>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <!-- MAIN NAVIGATION -->
+      <section id="main_nav" class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.main-nav</p>
+        <p>.flex-nav</p>
+        <p>.flex-nav-item</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;nav class="main-nav flex-nav"&gt;</code>
+        <code>&lt;a class="link-nav flex-nav-item"
+            href="#"&gt;Title1&lt;/a&gt;</code>
+        <code>&lt;a class="link-nav flex-nav-item"
+            href="#"&gt;Title2&lt;/a&gt;</code>
+        <code>&lt;a class="link-nav flex-nav-item"
+            href="#"&gt;Title3&lt;/a&gt;</code>
+        <code>&lt;/nav&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <nav class="main-nav flex-nav">
+          <a class="link-nav flex-nav-item" href="#main_nav">Home</a>
+          <a class="link-nav flex-nav-item" href="#main_nav">Projects</a>
+          <a class="link-nav flex-nav-item" href="#main_nav">About</a>
+        </nav>
+      </section>
     </section>
 
-    <main id="style-guide">
-      <!-- INTERACTIVE ELEMENTS SECTION // -->
-      <section id="interactive_elements"> 
-        <h2>Interactive Elements</h2>
+    <!-- BRAND COMPONENTS -->
+    <section id="brand-components animate">
+      <h2>Brand Components</h2>
 
-        <!-- IN-TEXT LINK -->
-        <section id="intext_link" class="element">
-          <h3>In-text link</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.link-intext</p>
-
-          <h4>Sample code:</h4>
-          <code
-            >&lt;a href="#" class="link-intext"&gt;In-text link&lt;/a&gt;</code
-          >
-
-          <h4>Rendered element:</h4>
-          <a class="link-intext" href="#intext_link">In-text link</a>
-        </section>
-
-        <!-- NAVIGATION LINK -->
-        <section id="link_nav" class="element">
-          <h3>Navigation Link</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.link-nav</p>
-
-          <h4>Sample code:</h4>
-          <code
-            >&lt;a href="#" class="link-nav"&gt;Navigation Link&lt;/a&gt;</code
-          >
-
-          <h4>Rendered element:</h4>
-          <a class="link-nav" href="#link_nav">Navigation Link</a>
-        </section>
-
-        <!-- IMAGE AS LINK -->
-        <section id="image_as_link" class="element">
-          <h3>Image as Link</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.products .product img</p>
-
-          <h4>Sample code:</h4>
-          <code>&lt;div class=""&gt;</code>
-          <code>&lt;a href="#"&gt;</code>
-          <code>&lt;img src="img/" alt="project"&gt;</code>
-          <code>&lt;/a&gt;</code>
-
-          <h4>Rendered element:</h4>
-          <div class="product-index">
-            <div class="product">
-                <a href="project1.html"><img src="img/Frame 1.png" alt="project 1"></a>
-            </div>
-          </div>
-        </section>
+      <section id="fonts" class="element">
+        <h3>Fonts: Montserrat</h3>
+        <h4>Samples:</h4>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <p>Paragraph</p>
+        <p>
+          Designed by
+          <a class="link-intext" href="https://fonts.google.com/?query=Julieta+Ulanovsky">Ulanovsky et al.</a>
+          From
+          <a class="link-intext" href="https://fonts.google.com/">Google Fonts</a>
+          <br />
+          Access and use via
+          <a class="link-intext" href="https://fonts.google.com/specimen/Montserrat">Montserrat Fonts</a>
+        </p>
       </section>
-      <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-      <!-- TEXT ELEMENTS SECTION // -->
-      <section id="text_elements">
-        <h2>Text Elements</h2>
-        <p>Could add "div class" to change style as H1</p>
-        <!-- FOUR LEVELS OF HEADINGS -->
-        <section id="headings" class="element">
-          <h3>Headings</h3>
+      <section id="colour_palettes" class="element">
+        <h3>Colour Palettes</h3>
 
-          <h4>CSS selector:</h4>
-          <p>
-            h1 <br />
-            h2 <br />
-            h3 <br />
-            h4
-          </p>
-
-          <h4>Sample code:</h4>
-          <code>&lt;div class = ""&gt;</code>
-          <code>&lt;h1&gt;H1 Heading&lt;/h1&gt;</code>
-          <code>&lt;div&gt;</code>
-          <code>&lt;h2&gt;H2 Heading&lt;/h2&gt;</code>
-          <code>&lt;h3&gt;H3 Heading&lt;/h3&gt;</code>
-          <code>&lt;h4&gt;H4 Heading&lt;/h4&gt;</code>
-
-          <h4>Rendered element:</h4>
-          <div class="main-title">
-            <h1>H1 Heading</h1>
-          </div>
-          <h2>H2 Heading</h2>
-          <h3>H3 Heading</h3>
-          <h4>H4 Heading</h4>
-        </section>
-
-        <!-- PARAGRAPH -->
-        <section id="paragraph" class="element">
-          <h3>Paragraphs</h3>
-
-          <h4>CSS selector:</h4>
-          <p>p</p>
-
-          <h4>Sample code:</h4>
-          <code>&lt;p&gt;Content&lt;/p&gt;</code>
-
-          <h4>Rendered element:</h4>
-          <p>
-            EVER GREEN brings an exclusive, unique, high-quality selection of limited edition plants straight from
-            our greenhouse to your home. Each variety is sourced, nurtured, and grown in small batches by our
-            passionate Research & Development growers. Searching the globe for responsibly grown varieties that
-            entice and excite plant lovers, we are constantly on the lookout for new and exciting plants to add to
-            the assortment.
-          </p>
-        </section>
-
+        <div class="bgp"></div>
+        Primary: #0a6d36 <br />
+        <div class="bgh"></div>
+        Hower effect: #666 <br />
+        <div class="tc"></div>
+        Text color: #000000
       </section>
-      <!-- // TEXT ELEMENTS SECTION -->
-
-      <!-- COMBINED ELEMENTS SECTION // -->
-      <section id="combined_elements">
-        <h2>Combined Elements</h2>
-
-        <!-- MAIN NAVIGATION -->
-        <section id="main_nav" class="element">
-          <h3>Main Navigation</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.main-nav</p>
-          <p>.flex-nav</p>
-          <p>.flex-nav-item</p>
-
-          <h4>Sample code:</h4>
-          <code>&lt;nav class="main-nav flex-nav"&gt;</code>
-          <code
-            >&lt;a class="link-nav flex-nav-item"
-            href="#"&gt;Title1&lt;/a&gt;</code
-          >
-          <code
-            >&lt;a class="link-nav flex-nav-item"
-            href="#"&gt;Title2&lt;/a&gt;</code
-          >
-          <code
-            >&lt;a class="link-nav flex-nav-item"
-            href="#"&gt;Title3&lt;/a&gt;</code
-          >
-          <code>&lt;/nav&gt;</code>
-
-          <h4>Rendered element:</h4>
-          <nav class="main-nav flex-nav">
-            <a class="link-nav flex-nav-item" href="#main_nav">Home</a>
-            <a class="link-nav flex-nav-item" href="#main_nav">Products</a>
-            <a class="link-nav flex-nav-item" href="#main_nav">About</a>
-          </nav>
-        </section>
-
-      <!-- BRAND COMPONENTS -->
-      <section id="brand-components">
-        <h2>Brand Components</h2>
-
-        <section id="fonts" class="element">
-          <h3>Fonts: Montserrat</h3>
-          <h4>Samples:</h4>
-          <h1>Heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <p>Paragraph</p>
-          <p>
-            Designed by
-            <a
-              class="link-intext"
-              href="https://fonts.google.com/?query=Julieta+Ulanovsky"
-              >Ulanovsky et al.</a
-            >
-            From
-            <a class="link-intext" href="https://fonts.google.com/"
-              >Google Fonts</a
-            >
-            <br />
-            Access and use via
-            <a
-              class="link-intext"
-              href="https://fonts.google.com/specimen/Montserrat"
-              >Montserrat Fonts</a
-            >
-          </p>
-        </section>
-
-        <section id="colour_palettes" class="element">
-          <h3>Colour Palettes</h3>
-
-          <div class="bgp"></div>
-          Primary: #0a6d36 <br />
-          <div class="bgh"></div>
-          Hower effect: #666 <br />
-          <div class="tc"></div>
-          Text color: #000000
-        </section>
-      </section>
+    </section>
+  </main>
+  
     <footer>
+      <section id="links" class="image-as-link image-wrapper flex-media">
+        <a class="link-intext" href="citation.html">Citations</a>
+      </section>
       <p>
         Copyright © 2023 Mike Chu IAT 339 D101 Spring 2023. All
         Rights Reserved.
       </p>
     </footer>
-  </body>
+    <script defer src="js/popup.js"></script>
+</body>
+
 </html>

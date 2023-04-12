@@ -95,9 +95,6 @@ main {
 
 }
 
-
-
-
 /* Code */
 code {
   font-family: transat-text, sans-serif;
@@ -265,6 +262,7 @@ COMBINED ELEMENTS -------------------
 }
 
 /* Style Guide Page */
+#citation
 #interactive_elements,
 #text_elements,
 #combined_elements,
@@ -278,12 +276,44 @@ main#style-guide {
 }
 
 
-/* START OF CITATION PAGE */
-main#citation{
-  width: 80%;
+@media screen and (max-width: 768px) {
+  main#style-guide {
+    width: 90%;
+  }
+  main{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
 }
-/* END OF CITATION PAGE */
 
+@media screen and (max-width: 576px) {
+  main#style-guide {
+    width: 95%;
+  }
+  select {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #interactive_elements,
+  #text_elements,
+  #combined_elements,
+  #branding {
+  margin-top: 3rem;
+  }
+  
+  main#style-guide {
+  width: 90%;
+  margin: 0 auto;
+  }
+  
+  select {
+  font-size: 14px;
+  padding: 6px;
+  }
+}
 
 /* Style the select elements */
 select {

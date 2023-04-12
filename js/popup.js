@@ -27,10 +27,12 @@ function isElementInViewport(el) {
       if (isElementInViewport(items[i])) {
         items[i].classList.add('animated');
         items[i].classList.add('popup');
-      } else {
-        items[i].classList.remove('animated');
+      } 
+      //For fade off if scroll back
+      /* else {
+        // items[i].classList.remove('animated');
         items[i].classList.remove('popup');
-      }
+      }*/
     }
   }
     
